@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+.nav{
+    background-color: #181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nav-list{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.nav-list :hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #DDD;
+    padding: 20px; 
+}
+
+.nav-list a:hover{
+    color: #FFF;
+}
+
+.main{
+    width: 100%;
+    background-color: #000;
+    height: calc(100vh - 80px);
+    background-image: url("images/capa.png");
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+.main h1{
+    color: #FFF;
+    font-size: 70px;
+}
+
+.main p{
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.call-to-action{
+   cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9s;
+}
+
+.call-to-action:hover{
+    transform: scale(1.1);  
+}
+
+.main a{
+    text-decoration: none;
+    color: #181818;
+}
+
+.about{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about div{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.about img{
+    margin-right: 100px;
+    width: 70%;
+    max-width: 450px;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.about img:hover{
+    transform: scale(1.1);
+}
+
+.about h2{
+    font-size: 44px;
+    margin-bottom: 14px;
+}
+
+.comp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.comp h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.comp p{
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.comp-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.comp img{
+    width: 50%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 1.5s;
+    border-radius: 10%; 
+    margin-top: 0.5%;
+}
+
+.comp img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.action{
+    background-color: #181818;
+    border: 0;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #181818;
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer p{
+    margin-left: 12px;
+}
+
+@media (max-width: 1050px){
+
+    .main h1{
+        font-size: 45px;
+    }
+
+    .main p{
+        font-size: 18px;
+    }
+
+    .main{
+        background-size: cover;
+    }
+
+    .about{
+        flex-direction: column;
+        padding-top: 80px;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .about div{
+        width: 80%;
+    }
+
+    .about div h2{
+        font-size: 45px;
+    }
+
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .comp img{
+        width: 27.5%;
+    
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer h3{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    footer p{
+        margin-top: 0;
+        margin-right: 15px;
+    }
+
+}
