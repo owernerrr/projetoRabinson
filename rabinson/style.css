@@ -197,12 +197,12 @@ footer{
     color: #FFF;
 }
 
-footer a{
+footer h3 a{
     color: #FFF;
     text-decoration: none;
 }
 
-footer p{
-    margin-left: 12px;
+footer h3:hover{
+    transition: 1.5s;
+    transform: scale(1.1);
 }
-
