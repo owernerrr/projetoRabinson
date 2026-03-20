@@ -149,14 +149,14 @@ html{
 
 .comp p{
     font-style: italic;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .comp-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin-bottom: 15px;
     border-radius: 10%;
 }
